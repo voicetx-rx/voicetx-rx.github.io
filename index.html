@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TX-RX - Ứng dụng truyền nhận âm thanh</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #eee;
+            text-align: center;
+        }
+        header {
+/*            padding: 60px 20px 30px;*/
+        }
+        header h1 {
+            font-size: 48px;
+            color: #00f2fe;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 20px;
+            color: #ccc;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px 20px;
+        }
+        .feature {
+            background: #1c1c1e;
+            border-radius: 15px;
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        .feature h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #00f2fe;
+        }
+        .feature i {
+            font-size: 40px;
+            color: #4facfe;
+            margin-bottom: 10px;
+        }
+        .feature img {
+            width: 120px;
+            height: auto;
+            margin: 15px 0;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+        }
+        .feature p {
+            font-size: 16px;
+            color: #bbb;
+            margin-bottom: 15px;
+        }
+        .feature .download-btn {
+            margin-top: auto;
+            background: #ff6b6b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .feature .download-btn:hover {
+            background: #ff4757;
+        }
+        .download-global {
+            margin: 50px 20px 20px;
+        }
+        .download-global a {
+            display: inline-block;
+            background: #2ed573;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .download-global a:hover {
+            background: #1eaa63;
+        }
+        footer {
+            margin: 50px 20px 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TX-RX</h1>
+    <p>Ứng dụng truyền và nhận âm thanh đa thiết bị thời gian thực</p>
+</header>
+
+<section class="features">
+    <div class="feature">
+        <i class="fas fa-broadcast-tower"></i>
+        <h2>Truyền âm thanh (TX)</h2>
+        <img src="demo-tx.jpg" alt="Demo TX">
+        <p>Biến thiết bị của bạn thành máy phát sóng âm thanh tới nhiều người nghe đồng thời.</p>
+        <a href="voiceTx.apk" class="download-btn">Tải TX</a>
+    </div>
+    <div class="feature">
+        <i class="fas fa-headphones-alt"></i>
+        <h2>Nhận âm thanh (RX)</h2>
+        <img src="demo-rx.jpg" alt="Demo RX">
+        <p>Biến thiết bị thành bộ thu âm thanh di động, mang lại trải nghiệm âm thanh không dây tuyệt vời.</p>
+        <a href="voiceRx.apk" class="download-btn">Tải RX</a>
+    </div>
+</section>
+
+<section class="download-global">
+    <a href="voiceTx-Rx.zip">Tải trọn bộ TX-RX</a>
+</section>
+
+<footer>
+    © 2025 TX-RX App. Tất cả các quyền được bảo lưu.
+</footer>
+
+</body>
+</html>
